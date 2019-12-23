@@ -1,37 +1,30 @@
 # BridgeLabz
 
-Basic Core Programs
+Functional Programs
 
-1.User Input and Replace String Template “Hello <<UserName>>, How are you?” 
-   I/P -> Take User Name as Input. Ensure UserName has min 3 char
-   Logic -> Replace <<UserName>> with the proper name
-   O/P -> Print the String with User Name 
+1.2D Array
+Desc -> A library for reading in 2D arrays of integers, doubles, or booleans from standard input and printing them out to standard output.
+I/P -> M rows, N Cols, and M * N inputs for 2D Array. Use Java Scanner Class
+Logic -> create 2 dimensional array in memory to read in M rows and N cols 
+O/P -> Print function to print 2 Dimensional Array. In Java use PrintWriter with OutputStreamWriter to print the output to the screen.
 
-2.Flip Coin and print percentage of Heads and Tails
-   I/P -> The number of times to Flip Coin. Ensure it is positive integer.
-   Logic -> Use Random Function to get value between 0 and 1. If < 0.5 then tails or heads
-   O/P -> Percentage of Head vs Tails
 
-3.Leap Year
-   I/P -> Year, ensure it is a 4 digit number.
-   Logic -> Determine if it is a Leap Year.
-   O/P -> Print the year is a Leap Year or not.
+2.Sum of three Integer adds to ZERO
+Desc -> A program with cubic running time. Read in N integers and counts the   number of triples that sum to exactly 0.
+I/P -> N number of integer, and N integer input array
+Logic -> Find distinct triples (i, j, k) such that a[i] + a[j] + a[k] = 0
+O/P -> One Output is number of distinct triplets as well as the second output is to print the distinct triplets.
 
-4.Power of 2 
-   Desc -> This program takes a command-line argument N and prints a table of the powers of 2 that are less than or equal to 2^N.
-   I/P -> The Power Value N. Only works if 0 <= N < 31 since 2^31 overflows an int
-   Logic -> repeat until i equals N.
-   O/P -> Print the year is a Leap Year or not.
 
-5.Harmonic Number 
-   Desc -> Prints the Nth harmonic number: 1/1 + 1/2 + ... + 1/N (http://users.encs.concordia.ca/~chvatal/notes/harmonic.html).
-   I/P -> The Harmonic Value N. Ensure N != 0
-   Logic -> compute 1/1 + 1/2 + 1/3 + ... + 1/N
-   O/P -> Print the Nth Harmonic Value.
+3.Write a program Distance.java that takes two integer command-line arguments x and y and prints the Euclidean distance from the point (x, y) to the origin (0, 0). The formulae to calculate distance = sqrt(x*x + y*y). Use Math.power function
 
-6.Factors
-  Desc -> Computes the prime factorization of N using brute force.
-  I/P -> Number to find the prime factors 
-  Logic -> Traverse till i*i <= N instead of i <= N for efficiency.
-  O/P -> Print the prime factors of number N.
+
+4.Write a program Quadratic.java to find the roots of the equation a*x*x + b*x + c. Since the equation is x*x, hence there are 2 roots. The 2 roots of the equation can be found using a formula (Note: Take a, b and c as input values)
+delta = b*b - 4*a*c
+Root 1 of x = (-b + sqrt(delta))/(2*a)
+Root 2 of x = (-b - sqrt(delta))/(2*a)
+
+5.Write a program WindChill.java that takes two double command-line arguments t and v and prints the wind chill. Use Math.pow(a, b) to compute ab. Given the temperature t (in Fahrenheit) and the wind speed v (in miles per hour), the National Weather Service defines the effective temperature (the wind chill) to be:
+
+Note: the formula is not valid if t is larger than 50 in absolute value or if v is larger than 120 or less than 3 (you may assume that the values you get are in that range).
 
