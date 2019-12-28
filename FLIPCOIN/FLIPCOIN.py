@@ -6,6 +6,8 @@ Created on Fri Dec 20 04:45:35 2019
 @author: MONESH.s
 """
 from utility import flipcoin
-
-n=int(input("enter the input value"))    
-flipcoin(n)
+#getting the user input
+n=int(input("enter the input value:"))
+#calling the function    
+print("heads percentage and tails percentage")
+print(flipcoin(n))
