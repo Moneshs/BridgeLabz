@@ -12,13 +12,13 @@ def anagram(str1,str2):
     if(n1!=n2):
         return False
     else:
-        #sorting the str1 and str2
-        str1=sorted(str1)
-        str2=sorted(str2)
+        count=0
+        for i in str1:
+            for j in str2:
+                if i==j:
+                   count+=1
 
-        for i in range (n1):
-            #check each character of both strings are equal together are not
-            if str1[i]!=str2[i]:
-                return False
-            else:
-                return True
+        if count==len(str1):
+            return True
+        else:
+           return False

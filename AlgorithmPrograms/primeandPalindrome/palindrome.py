@@ -7,3 +7,4 @@ from utility import prime
 n=1000
 #calling the function
 prime(1000)
+#Anagram()

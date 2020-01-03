@@ -15,7 +15,8 @@ with open('file1.txt','r') as f:
 
 #sorting the words
 L=sorted(list1)
+print(L)
 #getting the target word from the user
 target=input("Enter the word to search:")
 #calling the function
-print("targetfound:",binarysearch(L,target))
+print("targetfound:",binarysearch(L,0,len(L)-1,target))
